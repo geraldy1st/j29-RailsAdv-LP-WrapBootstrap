@@ -11,17 +11,23 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body class="is-preload">
+    <!-- Header -->
     <%= render 'layouts/layout/header' %>
+
+
+
+
     <%= yield %>
+    
+        <!-- Footer -->
     <%= render 'layouts/layout/footer' %>
+
+        <!-- Javascript -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'boomerang.min', 'data-turbolinks-track': 'reload' %>
-      
-
     <%= javascript_include_tag 'slidebar/slidebar.js', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'classie.js', 'data-turbolinks-track': 'reload' %>
 
-    <!-- Bootstrap Extensions -->
 
     <!-- Plugins: Sorted A-Z -->
     <%= javascript_include_tag 'vendor/adaptive-backgrounds/adaptive-backgrounds.js', 'data-turbolinks-track': 'reload'  %>
@@ -51,14 +57,26 @@
     <%= javascript_include_tag 'vendor/wow/wow.min.js', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_include_tag 'vendor/isotope/isotope.min.js', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'vendor/imagesloaded/imagesloaded.pkgd.min.js', 'data-turbolinks-track': 'reload' %> %>
+    <%= javascript_include_tag 'vendor/imagesloaded/imagesloaded.pkgd.min.js', 'data-turbolinks-track': 'reload' %>
 
 
     <!-- App JS -->
     <%= javascript_include_tag 'boomerang.min.js', 'data-turbolinks-track': 'reload' %>
-    <p>
+
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"b6bb9b2b27c2dcf47afcc216c","lid":"9fb0e97ee6"}) })</script>
-    </p>
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+    
